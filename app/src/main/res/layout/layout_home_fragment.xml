@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--如果这样写的话,轮播图的内容就写死了,而我们的轮播图中的url是变化的,因此不提议这样写轮播图-->
+    <!-- <com.zhouxinkai.topfinanceapp.view.widget.RollViewPager
+         android:id="@+id/rollViewPager"
+         android:layout_width="match_parent"
+         android:layout_height="120dip" />-->
+
+<!--    <LinearLayout
+        android:id="@+id/ll_turn_play_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/rl_contentArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"-->
+        android:orientation="vertical" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="#19000000"
+        android:dividerHeight="4dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" />
+
+</FrameLayout>

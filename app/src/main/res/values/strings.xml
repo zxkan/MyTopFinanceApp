@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TopFinanceApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="string_home">首页</string>
+    <string name="string_my_choose">自选</string>
+    <string name="string_dynamic">动态</string>
+    <string name="string_group">分组</string>
+    <string name="string_trading">交易</string>
+</resources>

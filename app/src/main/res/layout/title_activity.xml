@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:layout_alignParentTop="true"
+    android:gravity="center_vertical">
+
+    <!--带有搜索框的标题栏-->
+    <LinearLayout
+        android:id="@+id/title_bar_with_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_background_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_message_in_search_title"
+            android:layout_width="0dip"
+            android:layout_height="60dip"
+            android:layout_weight="1"
+            android:src="@mipmap/message_normal"
+            android:background="@null"
+            />
+
+        <EditText
+            android:background="@drawable/bg_edit_in_search_title"
+            android:singleLine="true"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:drawableLeft="@drawable/search_icon_in_edittext"
+            android:gravity="center_vertical"
+            android:hint="搜索股票/组合/用户/讨论/群组"
+            android:textColor="#A1B4D0"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/my_icon_logo"
+            android:background="@null"
+            />
+    </LinearLayout>
+
+
+    <!--自选的标题栏-->
+    <RelativeLayout
+        android:id="@+id/title_bar_myChoose"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_background_normal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ib_message_in_choose_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:background="@null"
+            android:src="@mipmap/message_normal" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_title_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="自选"
+            android:textColor="@color/main_white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@null"
+            android:src="@mipmap/title_search" />
+    </RelativeLayout>
+
+    <!--动态的标题栏-->
+    <RelativeLayout
+        android:id="@+id/title_bar_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_background_normal"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ib_message_in_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:src="@mipmap/message_normal" />
+
+        <TextView
+            android:id="@+id/tv_title_dynamic"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="动态"
+            android:textColor="@color/main_white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ib_regist_in_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@null"
+            android:src="@mipmap/icon_regist" />
+
+        <ImageButton
+            android:id="@+id/ib_search_in_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/ib_regist_in_dynamic"
+            android:background="@null"
+            android:src="@mipmap/title_icon_search" />
+
+    </RelativeLayout>
+
+    <!--组合-->
+    <RelativeLayout
+        android:id="@+id/title_bar_cube"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_background_normal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ib_message_in_cube"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:src="@mipmap/message_normal" />
+
+        <TextView
+            android:id="@+id/tv_title_cube"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="组合"
+            android:textColor="@color/main_white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ib_regist_in_cube"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:background="@null"
+            android:src="@mipmap/title_icon_cube" />
+
+        <ImageButton
+            android:id="@+id/ib_search_in_cube"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/ib_regist_in_cube"
+            android:background="@null"
+            android:src="@mipmap/title_icon_search" />
+    </RelativeLayout>
+
+    <!--交易-->
+    <RelativeLayout
+        android:id="@+id/title_bar_trading"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/title_background_normal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ib_message_in_trading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:src="@mipmap/message_normal" />
+
+        <LinearLayout
+            android:layout_width="150dip"
+            android:layout_height="30dip"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/real_trade"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:textColor="@color/main_white"
+                android:background="@drawable/bg_real_trade_when_click"
+                android:text="实盘交易"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/virtual_trade"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:background="@drawable/bg_virtual_trade_when_normal"
+                android:text="模拟交易"
+                android:textColor="@color/normal_color_in_trade"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

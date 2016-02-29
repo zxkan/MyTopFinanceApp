@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/activity_title"
+        layout="@layout/title_activity"
+        />
+    <include
+        android:id="@+id/activity_bottom"
+        layout="@layout/bottom_activity"
+        />
+
+    <FrameLayout
+        android:id="@+id/container_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activity_bottom"
+        android:layout_below="@id/activity_title"
+        />
+
+</RelativeLayout>

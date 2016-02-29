@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_blue">#3A87FF</color>
+    <color name="main_white">#ffffff</color>
+    <color name="deep_blue">#214283</color>
+    <color name="normal_color_in_trade">#C0C5CC</color>
+</resources>

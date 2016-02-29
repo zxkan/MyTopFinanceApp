@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dip"
+    android:orientation="vertical">
+    <!--这个Xml是整个轮播图区域的Xml，也就是说整个轮播图包括
+            1、RollViewPager
+            2、轮播点
+        其中：
+            RollViewPager添加到ll_imageArea中
+            轮播点添加到ll_dotArea中
+
+        要注意的是:
+            RollViewPager中的布局不是这个xml文件(layout_turn_play_picture_tool.xml)，
+            而是layout_roll_view_pager
+    -->
+    <!-- <LinearLayout
+         android:id="@+id/ll_rollViewPagerArea"
+         android:layout_width="match_parent"
+         android:layout_height="0dip"
+         android:layout_weight="5"
+         android:orientation="horizontal"
+         />
+
+     <LinearLayout
+         android:id="@+id/ll_dotArea"
+         android:layout_width="match_parent"
+         android:layout_height="0dip"
+         android:layout_weight="1"
+         android:orientation="horizontal"
+         android:gravity="center"
+         />-->
+    <LinearLayout
+        android:id="@+id/ll_rollViewPagerArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:background="#ff0000"
+        android:orientation="horizontal"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_dotArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#9cc2ff"
+        android:gravity="center"
+        />
+
+</LinearLayout>
