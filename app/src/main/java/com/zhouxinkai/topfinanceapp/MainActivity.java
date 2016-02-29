@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * 这里是resume方法
+     */
     @Override
     protected void onResume() {
         super.onResume();
