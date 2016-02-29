@@ -51,6 +51,14 @@ public class MailingActivity extends AppCompatActivity {
 
         initWidget();
         initDataSource();
+        initDataFromNet();
+    }
+
+    /**
+     * 从网络上拉取数据
+     */
+    private void initDataFromNet() {
+
 
     }
 

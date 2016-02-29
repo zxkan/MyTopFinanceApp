@@ -112,9 +112,9 @@ public class TitleManager implements Observer,View.OnClickListener{
        title_bar_cube = (RelativeLayout) mainActivity.findViewById(R.id.title_bar_cube);
        title_bar_trading = (RelativeLayout) mainActivity.findViewById(R.id.title_bar_trading);
 
-        real_trade = (TextView) mainActivity.findViewById(R.id.real_trade);
-        virtual_trade = (TextView) mainActivity.findViewById(R.id.virtual_trade);
-        mailInHome = (ImageButton) mainActivity.findViewById(R.id.ib_message_in_search_title);
+        real_trade = (TextView) mainActivity.findViewById(R.id.real_trade); //真实交易
+        virtual_trade = (TextView) mainActivity.findViewById(R.id.virtual_trade);//虚拟交易
+        mailInHome = (ImageButton) mainActivity.findViewById(R.id.ib_message_in_search_title);//左上角的邮件图片
         real_trade.setOnClickListener(this);
         virtual_trade.setOnClickListener(this);
         mailInHome.setOnClickListener(this);
@@ -220,7 +220,7 @@ public class TitleManager implements Observer,View.OnClickListener{
                 virtualTradeClick(); //虚拟交易
                 break;
             case R.id.ib_message_in_search_title:
-                jump2MailActivity(); //跳转到邮件箱
+                jump2MailingActivity(); //跳转到邮件箱
                 break;
         }
     }
@@ -259,7 +259,7 @@ public class TitleManager implements Observer,View.OnClickListener{
     /**
      * 跳转到“邮件”Activity
      */
-    private void jump2MailActivity() {
+    private void jump2MailingActivity() {
         Intent intent = new Intent(mainActivity,MailingActivity.class);
         mainActivity.startActivity(intent);
     }
