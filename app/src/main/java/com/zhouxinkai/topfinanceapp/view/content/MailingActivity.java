@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.zhouxinkai.topfinanceapp.R;
 import com.zhouxinkai.topfinanceapp.bean.MailingDataBean;
+import com.zhouxinkai.topfinanceapp.utils.HttpInterface;
 import com.zhouxinkai.topfinanceapp.view.adapter.MailingRecyclerAdapter;
 
 import java.util.ArrayList;
@@ -58,8 +59,7 @@ public class MailingActivity extends AppCompatActivity {
      * 从网络上拉取数据
      */
     private void initDataFromNet() {
-
-
+        
     }
 
     /**

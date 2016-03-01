@@ -9,7 +9,28 @@ public class MailingDataBean implements Serializable{
 
     private static final long serialVersionUID = 47884423649028491L;
 
-    public String text;
-
+    /**
+     * 图片ID
+     */
     public int iconId;
+
+    /**
+     * 邮件标题
+     */
+    public String mailingTitle;
+
+    /**
+     * 内容描述
+     */
+    public String mailingDesc;
+
+    /**
+     * 邮件到达的时间
+     */
+    public String mailingTime;
+
+    /**
+     * 当前类型邮件的数量
+     */
+    public String mailingCount;
 }

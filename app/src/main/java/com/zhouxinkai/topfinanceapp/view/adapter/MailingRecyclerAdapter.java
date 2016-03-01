@@ -75,20 +75,23 @@ public class MailingRecyclerAdapter extends RecyclerView.Adapter<MailingRecycler
 
     public class MyHolder extends RecyclerView.ViewHolder{
 
-        /**
-         * 邮件条目中的Icon
-         */
-        private ImageView icon_in_mailingItem;
+        private ImageView icon_in_mailingItem; //最左边的icon
 
-        /**
-         * 邮件条目的描述内容
-         */
-        private TextView name_in_mailingItem;
+        private TextView title_mailing_item; //标题
+
+        private TextView desc_mailing_item; //信息描述
+
+        private TextView time_mailing_item; //时间
+
+        private TextView count_mailing_item; //邮件数量
 
         public MyHolder(View itemView) {
             super(itemView);
             icon_in_mailingItem =  (ImageView)itemView.findViewById(R.id.icon_in_mailingItem);
-            name_in_mailingItem = (TextView)itemView.findViewById(R.id.name_in_mailingItem);
+            title_mailing_item = (TextView)itemView.findViewById(R.id.title_mailing_item);
+            desc_mailing_item = (TextView)itemView.findViewById(R.id.desc_mailing_item);
+            time_mailing_item = (TextView)itemView.findViewById(R.id.time_mailing_item);
+            count_mailing_item = (TextView)itemView.findViewById(R.id.count_mailing_item);
         }
 
         /**
@@ -98,7 +101,6 @@ public class MailingRecyclerAdapter extends RecyclerView.Adapter<MailingRecycler
         public void setDataAndRefreshUI(MailingDataBean mailingDataBean) {
 //            mTv.setText(mailingDataBean.text);
             icon_in_mailingItem.setImageResource(mailingDataBean.iconId);
-            name_in_mailingItem.setText(mailingDataBean.text);
         }
     }
 }
