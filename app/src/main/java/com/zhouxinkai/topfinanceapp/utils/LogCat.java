@@ -10,6 +10,8 @@ public class LogCat {
     public static boolean isOpen = true;
 
     public static void i(String TAG,String msg){
-        Log.i(TAG,msg);
+        if(isOpen){
+            Log.i(TAG,msg);
+        }
     }
 }

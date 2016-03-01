@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.zhouxinkai.topfinanceapp.view.content.MailingActivity"
+        <activity android:name=".view.content.mailing.MailingActivity"
             android:launchMode="singleTask"
             />
     </application>

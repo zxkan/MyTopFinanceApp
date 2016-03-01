@@ -32,5 +32,5 @@ public class MailingDataBean implements Serializable{
     /**
      * 当前类型邮件的数量
      */
-    public String mailingCount;
+    public int mailingCount;
 }

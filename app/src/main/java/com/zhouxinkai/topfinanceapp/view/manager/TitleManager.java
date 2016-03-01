@@ -12,7 +12,7 @@ import com.zhouxinkai.topfinanceapp.R;
 import com.zhouxinkai.topfinanceapp.bean.TradingCategoryInTitle;
 import com.zhouxinkai.topfinanceapp.bean.TradingPage;
 import com.zhouxinkai.topfinanceapp.global.ConstantValue;
-import com.zhouxinkai.topfinanceapp.view.content.MailingActivity;
+import com.zhouxinkai.topfinanceapp.view.content.mailing.MailingActivity;
 
 import java.util.Observable;
 import java.util.Observer;

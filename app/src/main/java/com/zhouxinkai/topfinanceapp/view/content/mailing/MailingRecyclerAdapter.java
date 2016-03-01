@@ -1,4 +1,4 @@
-package com.zhouxinkai.topfinanceapp.view.adapter;
+package com.zhouxinkai.topfinanceapp.view.content.mailing;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -20,6 +20,7 @@ import java.util.List;
  *    The Holder you define must belong to the class you defined
  */
 public class MailingRecyclerAdapter extends RecyclerView.Adapter<MailingRecyclerAdapter.MyHolder> {
+
 
     private static final String TAG = "MailingRecyclerAdapter";
 
@@ -85,6 +86,7 @@ public class MailingRecyclerAdapter extends RecyclerView.Adapter<MailingRecycler
 
         private TextView count_mailing_item; //邮件数量
 
+        //holder
         public MyHolder(View itemView) {
             super(itemView);
             icon_in_mailingItem =  (ImageView)itemView.findViewById(R.id.icon_in_mailingItem);
@@ -99,8 +101,12 @@ public class MailingRecyclerAdapter extends RecyclerView.Adapter<MailingRecycler
          * @param mailingDataBean
          */
         public void setDataAndRefreshUI(MailingDataBean mailingDataBean) {
-//            mTv.setText(mailingDataBean.text);
+            LogCat.i(TAG,"----setDataAndRefreshUI----: \r\n" + mailingDataBean.iconId +","+mailingDataBean.mailingTitle+","+mailingDataBean.mailingDesc+","+mailingDataBean.mailingTime+","+mailingDataBean.mailingCount);
             icon_in_mailingItem.setImageResource(mailingDataBean.iconId);
+            title_mailing_item.setText(mailingDataBean.mailingTitle);
+            desc_mailing_item.setText(mailingDataBean.mailingDesc);
+            time_mailing_item.setText(mailingDataBean.mailingTime);
+            count_mailing_item.setText(mailingDataBean.mailingCount+"");
         }
     }
 }
