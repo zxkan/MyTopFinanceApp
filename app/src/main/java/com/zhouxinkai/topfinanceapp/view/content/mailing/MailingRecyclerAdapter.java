@@ -27,6 +27,7 @@ public class MailingRecyclerAdapter extends RecyclerView.Adapter<MailingRecycler
 
     /**
      * 模拟的数据源
+     * 哈哈
      */
     private List<MailingDataBean> mailingsList;
 
