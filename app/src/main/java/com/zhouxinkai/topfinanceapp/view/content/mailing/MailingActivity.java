@@ -129,8 +129,6 @@ public class MailingActivity extends AppCompatActivity {
     };
 
     /**
-     * 将数据赋值到成员变量处,千万别忘了
-     *
      * @param mailingDatas
      */
     public void initDataEvent(List<MailingDataBean> mailingDatas) { //Main Thread

@@ -18,6 +18,7 @@ import java.util.List;
  *
  * illustration:
  *    The Holder you define must belong to the class you defined
+ *    if you modify my code,you are a monkey
  */
 public class MailingRecyclerAdapter extends RecyclerView.Adapter<MailingRecyclerAdapter.MyHolder> {
 
